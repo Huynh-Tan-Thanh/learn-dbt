@@ -1,5 +1,19 @@
+WITH dim_product_source AS (
+  SELECT*
+  FROM `vit-lam-data.wide_world_importers.warehouse__stock_items`
+)
+
+, dim_product_rename_column AS (
+  SELECT
+    stock_item_id AS product_key
+    , stock_item_name AS product_name
+    , brand AS brand_name
+  FROM dim_product_source
+)
+
+
 SELECT 
-  CAST(stock_item_id AS INTEGER) AS	product_key
-  ,CAST(stock_item_name AS STRING)	AS product_name
-  , CAST(brand AS STRING) AS brand_name
-FROM `vit-lam-data.wide_world_importers.warehouse__stock_items`
+  CAST(product_key AS INTEGER) AS	product_key
+  ,CAST(product_name AS STRING)	AS product_name
+  , CAST(brand_name AS STRING) AS brand_name
+FROM dim_product_rename_column
