@@ -19,7 +19,6 @@ WITH dim_product_source AS (
   FROM dim_product_rename_column
 )
 
-
 SELECT 
   product_key
   , product_name
