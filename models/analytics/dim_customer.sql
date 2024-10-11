@@ -14,7 +14,7 @@ WITH dim_customer_source AS (
   SELECT
     CAST(customer_key AS INTEGER) AS customer_key
     , CAST(customer_name AS STRING) AS customer_name
-  FROM dim_product_rename_column
+  FROM dim_customer__rename_column
 )
 
 SELECT 
