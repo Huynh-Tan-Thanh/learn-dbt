@@ -17,6 +17,9 @@ WITH fact_sales_order__source AS (
   FROM fact_sales_order__rename_column
 )
 
-SELECT*
+
+SELECT
+  sales_order_key
+  , customer_key
 FROM fact_sales_order__rename_column
 
