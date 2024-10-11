@@ -19,7 +19,12 @@ WITH fact_sales_order_line_source AS (
     , CAST(quantity AS INTEGER) AS INTEGER
     , CAST(unit_price AS NUMERIC) AS unit_price
   FROM fact_sales_order_line__rename_column
-
 )
-SELECT*
+
+SELECT
+  sales_order_line_key
+  , product_key
+  , quantity
+  , unit_price
+  , quantity * unit_price AS gross_amount
 FROM fact_sales_order_line__cast_type
