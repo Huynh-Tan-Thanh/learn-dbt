@@ -16,7 +16,7 @@ WITH fact_sales_order_line_source AS (
   SELECT
     CAST(sales_order_line_key AS INTEGER) AS sales_order_line_key
     , CAST(product_key AS INTEGER) AS product_key
-    , CAST(quantity AS INTEGER) AS INTEGER
+    , CAST(quantity AS INTEGER) AS quantity
     , CAST(unit_price AS NUMERIC) AS unit_price
   FROM fact_sales_order_line__rename_column
 )
