@@ -23,7 +23,7 @@ WITH fact_sales_order_line_source AS (
   FROM fact_sales_order_line__rename_column
 )
 
-, fact_sales_order__caculate_measure AS (
+, fact_sales_order__calculate_measure AS (
   SELECT
     sales_order_line_key
     , sales_order_key
@@ -42,6 +42,6 @@ SELECT
   , fact_line.quantity
   , fact_line.unit_price
   , fact_line.gross_amount
-FROM fact_sales_order__caculate_measure AS fact_line 
+FROM fact_sales_order__calculate_measure AS fact_line 
 LEFT JOIN {{ref("stg_fact_sales_order")}} AS fact_header
   ON fact_line.sales_order_key = fact_header.sales_order_key
