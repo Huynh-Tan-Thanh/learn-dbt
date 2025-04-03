@@ -114,4 +114,5 @@
 
     "scm.defaultViewMode": "tree",
     "extensions.ignoreRecommendations": true,
+    "bitoAI.codeCompletion.enableAutoCompletion": false,
 }
