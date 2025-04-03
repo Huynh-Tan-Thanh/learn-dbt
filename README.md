@@ -1,6 +1,6 @@
-# {your_name} Data Warehouse Project
+# Tan-Thanh Data Warehouse Project
 
-Hello! I'm {your_name}, and this is my project to show my data warehouse skills.
+Hello! I'm Tan-Thanh, and this is my project to show my data warehouse skills.
 
 ## 🎯 Knowledge & techniques that I achieved
 
@@ -24,4 +24,4 @@ You can find data quality tests inside the `yml` files at [`models/analytics`](m
 ## More info
 - Raw dataset: [Wide World Importers](https://learn.microsoft.com/en-us/sql/samples/wide-world-importers-what-is?view=sql-server-ver16)
 - Database: [BigQuery](https://cloud.google.com/bigquery)
-- Course: [Data Warehouse by Vitlamdata](https://vitlamdata.substack.com/p/khoa-hoc-xu-ly-du-lieu-cho-data-warehouse)
+<!-- - Course: [Data Warehouse by Vitlamdata](https://vitlamdata.substack.com/p/khoa-hoc-xu-ly-du-lieu-cho-data-warehouse) -->
